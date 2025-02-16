@@ -1,73 +1,114 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>游戏信息</title>
+    <title>NanoLab</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+
+        .header {
+            background-color: #333;
+            color: white;
             padding: 20px;
         }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .content {
+            margin: 40px 0;
+        }
+
         .game {
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            border-radius: 5px;
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            width: 200px;
         }
-        .game h2 {
-            margin-top: 0;
-        }
+
         .game img {
-            width: 256px;
+            width: 100%;
             height: auto;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
             border-radius: 5px;
         }
-        .game p {
-            margin-top: 5px;
+
+        .button:active {
+            background-color: #45a049;
         }
-        .game a {
-            text-decoration: none;
-            color: #007bff;
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="game">
-            <h2>NanoLab团队</h2>
-            <p>我们是一只业余的游戏创作团队，专注开发创意玩法游戏，如果有想法或者问题，请联系277197324@qq.com。</p>
-            
-        </div>
 
-        <div class="game">
-            <h2>钵钵鸡</h2>
-            <img src="boboji.png" alt="游戏截图">
-            <p>你真的了解钵钵鸡吗？
-挑战神曲《钵钵鸡》节奏，快来试试吧！
-找准节奏，完美敲钉子挑战100分！</p>
-            <p><a href="https://apps.apple.com/cn/app/id6478688896">下载试玩</a></p>
-        </div>
-        <div class="game">
-            <h2>大师保佑</h2>
-            <img src="dashi.png" alt="游戏截图">
-            <p>此应用可以模拟真实的木鱼，点击屏幕敲木鱼。
-
-大师念经，可烧香，可拜佛。
-
-3D环境，身临其境。</p>
-            <p><a href="https://apps.apple.com/cn/app/id1672354461">下载试玩</a></p>
-        </div>
-
-
-        <!-- 如果有多个游戏，可以复制上面的 .game 结构来添加更多游戏信息 -->
-
+    <div class="header">
+        <h1>Welcome to NanoLab</h1>
+        <p>Welcome to NanoLab, We are an amateur game team, welcome to download our games!</p>
     </div>
+
+    <div class="content">
+        <div class="game">
+            <img src="boboji.png" alt="游戏封面">
+            <h3>Bit&Bops</h3>
+            <div class="buttons">
+                <a href="https://play.google.com/store/apps/details?id=your.package.name" class="button">下载APK</a>
+                <a href="https://apps.apple.com/us/app/bits-bops/id1363657753" class="button">下载 App Store</a>
+            </div>
+        </div>
+
+        <div class="game">
+            <img src="star_icon.png" alt="游戏封面">
+            <h3>Pop Stars 3</h3>
+            <div class="buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.NanoLab.PopFusion3D&pli=1" class="button">下载 Google Play</a>
+                <a href="https://apps.apple.com/us/app/pop-all-stars-super-star-ultra/id933978398" class="button">下载 App Store</a>
+            </div>
+        </div>
+
+        <div class="game">
+            <img src="tris.png" alt="游戏封面">
+            <h3>Classic Retro Blocks</h3>
+            <div class="buttons">
+                <a href="https://galaxystore.samsung.com/detail/com.nanolab.eluosishudu" class="button">下载 Samsung Store</a>
+                <a href="https://apps.apple.com/us/app/classic-retro-blocks/id819304267" class="button">下载 App Store</a>
+            </div>
+        </div>
+
+        <!-- 可以根据需要继续添加游戏 -->
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 NanoLab </p>
+    </div>
+
 </body>
 </html>
